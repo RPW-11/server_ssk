@@ -22,6 +22,7 @@ def hello_world():
 
 @server.route("/login", methods=['POST'])
 def handle_login():
+    print(f"The logged ip: {request.remote_addr} and the trial: {ips_trials.get(request.remote_addr)}")
     validation.count_trials(ips_trials, request.remote_addr)
     data = request.form
     username = data.get('username')
