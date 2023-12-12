@@ -5,6 +5,8 @@ To run the server:
 
 2. Run this command to activate the virtual env
 `source .venv/bin/activate`
+   For windows, run this command
+`.venv\Scripts\activate`
 
 3. Install depedencies using pip
 `pip install flask gunicorn`
